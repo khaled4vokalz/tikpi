@@ -1,0 +1,10 @@
+  version: '3.8'
+  services:
+    tikpi:
+      build: .
+      network_mode: host
+      cap_add:
+        - NET_ADMIN
+        - NET_RAW
+      stdin_open: true
+      tty: true
